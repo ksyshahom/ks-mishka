@@ -1,21 +1,11 @@
 {
   "name": "mishka",
-  "version": "1.0.0",
-  "description": "Учебный проект интернет-магазина Мишка от HTML Academy",
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/ksyshahom/ks-mishka.git"
-  },
-  "author": "Ksenia Filimonova",
-  "bugs": {
-    "url": "https://github.com/ksyshahom/ks-mishka/issues"
-  },
-  "homepage": "https://github.com/ksyshahom/ks-mishka#readme",
+  "private": true,
+  "description": "Личный проект «Мишка» от HTML Academy",
   "devDependencies": {
     "@htmlacademy/editorconfig-cli": "1.0.0",
     "autoprefixer": "10.4.0",
     "browser-sync": "2.27.7",
-    "browser-sync-client": "2.27.9",
     "gulp": "4.0.2",
     "gulp-dart-sass": "^1.0.2",
     "gulp-plumber": "1.2.1",
@@ -47,7 +37,7 @@
     "source/sass/**/*.scss"
   ],
   "engines": {
-    "node": "^18"
+    "node": "^16"
   },
   "type": "module"
 }
