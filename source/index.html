@@ -9,26 +9,30 @@
 
   <link rel="stylesheet" href="css/style.css">
 </head>
-<body>
+<body class="page-body">
   <header class="page-header">
     <a class="page-header__logo">
       <img class="page-header__logo-image" src="img/header/mishka-logo-mobile.svg" alt="Магазин игрушек Мишка"
            width="86" height="35">
     </a>
-    <button class="page-header__menu-opener"></button>
-    <nav class="page-header__menu main-menu__list">
-      <ul>
+    <button class="page-header__menu-opener">menu</button>
+    <nav class="page-header__menu main-menu">
+      <ul class="main-menu__list">
         <li class="main-menu__item">
-          <a href="/catalog.html">Каталог товаров</a>
+          <a class="main-menu__item-link" href="/catalog.html">Каталог товаров</a>
         </li>
         <li class="main-menu__item">
-          <a href="/knitting.html">Вязание на заказ</a>
+          <a class="main-menu__item-link" href="/knitting.html">Вязание на заказ</a>
         </li>
         <li class="main-menu__item">
-          <button class="main-menu__search">Поиск по сайту</button>
+          <form action="https://echo.htmlacademy.ru/" method="get">
+            <label class="main-menu__search-label">
+              <input class="main-menu__search-input" type="text" name="search" placeholder="Поиск по сайту">
+            </label>
+          </form>
         </li>
         <li class="main-menu__item">
-          <a href="#">Корзина: пока пуста</a>
+          <a class="main-menu__item-link" href="#">Корзина: пока пуста</a>
         </li>
       </ul>
     </nav>
@@ -183,28 +187,29 @@
       <button class="contacts__write_us button"></button>
     </section>
 
-    <footer class="page-footer">
-      <a class="page-footer__logo">
-        <img class="page-footer__logo-image" src="img/header/mishka-logo-mobile.svg" alt="Магазин игрушек Мишка"
-             width="86" height="35">
-      </a>
-      <ul class="page-footer__socials">
-        <li>
-          <a class="page-footer__insta" href="#"></a>
-        </li>
-        <li>
-          <a class="page-footer__fb" href="#"></a>
-        </li>
-        <li>
-          <a class="page-footer__tw" href="#"></a>
-        </li>
-      </ul>
-      <a class="page-footer__copyright">
-        <p>Разработано</p>
-        <span class="page-footer__copyright-icon"></span>
-      </a>
-    </footer>
   </main>
+
+  <footer class="page-body__footer page-footer">
+    <a class="page-footer__logo">
+      <img class="page-footer__logo-image" src="img/header/mishka-logo-mobile.svg" alt="Магазин игрушек Мишка"
+           width="86" height="35">
+    </a>
+    <ul class="page-footer__socials">
+      <li>
+        <a class="page-footer__insta" href="#"></a>
+      </li>
+      <li>
+        <a class="page-footer__fb" href="#"></a>
+      </li>
+      <li>
+        <a class="page-footer__tw" href="#"></a>
+      </li>
+    </ul>
+    <a class="page-footer__copyright">
+      <p>Разработано</p>
+      <span class="page-footer__copyright-icon"></span>
+    </a>
+  </footer>
 
   <section class="pop-up add-to-cart">
     <h2 class="add-to-cart__title">Добавить в корзину</h2>

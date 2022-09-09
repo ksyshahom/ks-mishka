@@ -1,0 +1,42 @@
+.main-menu {
+  font-size: 17px;
+  font-weight: 700;
+  color: #000000;
+}
+
+.main-menu__list {
+  list-style: none;
+}
+
+.main-menu__item-link {
+  color: #000000;
+  text-decoration: none;
+
+  &:hover {
+    opacity: 0.6;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+}
+
+.main-menu__search-input {
+  font: inherit;
+
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+
+  &::placeholder {
+    color: #000000;
+  }
+
+  &:hover::placeholder {
+    opacity: 0.6;
+  }
+
+  &:focus::placeholder {
+    opacity: 0.3;
+  }
+}

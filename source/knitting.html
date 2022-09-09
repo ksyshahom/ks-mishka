@@ -6,8 +6,10 @@
 
   <title>Вязание на заказ - Мишка</title>
   <meta name="description" content="">
+
+  <link rel="stylesheet" href="css/style.css">
 </head>
-<body>
+<body class="page-body">
   <header class="page-header">
     <a class="page-header__logo" href="/">
       <img class="page-header__logo-image" src="img/header/mishka-logo-mobile.svg" alt="Магазин игрушек Мишка"
@@ -17,7 +19,7 @@
     <nav class="page-header__menu main-menu__list">
       <ul>
         <li class="main-menu__item">
-          <a href="#">Каталог товаров</a>
+          <a href="/catalog.html">Каталог товаров</a>
         </li>
         <li class="main-menu__item--active">
           <a>Вязание на заказ</a>
@@ -52,7 +54,7 @@
         Мы будем рады воплотить в жизнь ваши пожелания! Заполните простую форму заказа и мы свяжемся с вами,
         чтобы уточнить детали.
       </p>
-      <form class="custom-order__form form" action="https://echo.htmlacademy.ru/">
+      <form class="custom-order__form form" action="https://echo.htmlacademy.ru/" method="post">
         <fieldset class="form__fieldset">
           <legend class="form__fieldset-title">Тип</legend>
           <p class="form__item">
@@ -167,28 +169,29 @@
       </form>
     </section>
 
-    <footer class="page-footer">
-      <a class="page-footer__logo" href="/">
-        <img class="page-footer__logo-image" src="img/header/mishka-logo-mobile.svg" alt="Магазин игрушек Мишка"
-             width="86" height="35">
-      </a>
-      <ul class="page-footer__socials">
-        <li>
-          <a class="page-footer__insta" href="#"></a>
-        </li>
-        <li>
-          <a class="page-footer__fb" href="#"></a>
-        </li>
-        <li>
-          <a class="page-footer__tw" href="#"></a>
-        </li>
-      </ul>
-      <a class="page-footer__copyright">
-        <p>Разработано</p>
-        <span class="page-footer__copyright-icon"></span>
-      </a>
-    </footer>
   </main>
+
+  <footer class="page-body__footer page-footer">
+    <a class="page-footer__logo" href="/">
+      <img class="page-footer__logo-image" src="img/header/mishka-logo-mobile.svg" alt="Магазин игрушек Мишка"
+           width="86" height="35">
+    </a>
+    <ul class="page-footer__socials">
+      <li>
+        <a class="page-footer__insta" href="#"></a>
+      </li>
+      <li>
+        <a class="page-footer__fb" href="#"></a>
+      </li>
+      <li>
+        <a class="page-footer__tw" href="#"></a>
+      </li>
+    </ul>
+    <a class="page-footer__copyright">
+      <p>Разработано</p>
+      <span class="page-footer__copyright-icon"></span>
+    </a>
+  </footer>
 
 </body>
 </html>
