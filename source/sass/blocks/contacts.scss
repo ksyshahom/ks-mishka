@@ -7,6 +7,9 @@
 .contacts__list {
   font-size: 15px;
   line-height: 30px;
+  color: $dark-grey-text;
+
+  list-style: none;
 }
 
 .contacts__email {

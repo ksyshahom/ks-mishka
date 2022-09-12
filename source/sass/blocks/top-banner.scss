@@ -1,5 +1,9 @@
 .top-banner {
   background-color: #f9f9f9;
+
+  &--index{
+    background-image: url("../../img/index/hero-mobile.jpg");
+  }
 }
 
 .top-banner__title {
@@ -8,5 +12,4 @@
   line-height: 30px;
 
   text-align: center;
-  background-image: url("../../img/index/hero-mobile.jpg");
 }
