@@ -1,6 +1,7 @@
 .main-menu {
   font-size: 17px;
   font-weight: 700;
+  line-height: 24px;
   color: #000000;
 }
 
@@ -12,12 +13,19 @@
   color: #000000;
   text-decoration: none;
 
+  &:focus,
   &:hover {
     opacity: 0.6;
   }
 
   &:active {
     opacity: 0.3;
+  }
+
+  &--current:focus,
+  &--current:hover,
+  &--current:active {
+    opacity: 1;
   }
 }
 

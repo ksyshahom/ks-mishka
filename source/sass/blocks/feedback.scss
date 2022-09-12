@@ -1,0 +1,35 @@
+.feedback__title {
+  font-size: 25px;
+  line-height: 30px;
+  font-weight: 700;
+}
+
+.feedback__message {
+  font-size: 15px;
+  line-height: 30px;
+}
+
+.feedback__author-name {
+  font-size: 17px;
+  line-height: 20px;
+  font-weight: 700;
+}
+
+.feedback__author-at {
+  font-size: 15px;
+  line-height: 20px;
+}
+
+.feedback__nav-button {
+  background-color: #ffffff;
+  border: 1px #ececec solid;
+
+  &:focus,
+  &:hover {
+    opacity: 0.6;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+}

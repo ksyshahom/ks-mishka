@@ -1,3 +1,12 @@
 .top-banner {
   background-color: #f9f9f9;
 }
+
+.top-banner__title {
+  font-weight: 700;
+  font-size: 27px;
+  line-height: 30px;
+
+  text-align: center;
+  background-image: url("../../img/index/hero-mobile.jpg");
+}

@@ -1,0 +1,30 @@
+.week-product__product-name {
+  font-size: 25px;
+  line-height: 30px;
+  font-weight: 700;
+}
+
+.week-product__section-name {
+  font-size: 17px;
+  line-height: 20px;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: $light-turquoise;
+}
+
+.week-product__product-desc {
+  font-size: 15px;
+  line-height: 24px;
+}
+
+.week-product__product-stats {
+  font-size: 15px;
+  line-height: 20px;
+}
+
+.week-product__product-cost {
+  font-size: 17px;
+  line-height: 24px;
+  font-weight: 700;
+  text-align: center;
+}

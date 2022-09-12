@@ -1,0 +1,21 @@
+.button {
+  font-size: 17px;
+  line-height: 20px;
+  font-weight: 700;
+  text-transform: uppercase;
+  text-align: center;
+
+  border: 2px #000000 solid;
+  background-color: #ffffff;
+
+  &:focus,
+  &:hover {
+    color: #ffffff;
+    background-color: #000000;
+  }
+
+  &:active {
+    color: rgba(#ffffff, 30%);
+    background-color: #000000;
+  }
+}

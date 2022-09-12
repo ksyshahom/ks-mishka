@@ -1,0 +1,19 @@
+.categories__list {
+  list-style: none;
+}
+
+.categories__item-link {
+  font-size: 19px;
+  line-height: 24px;
+  font-weight: 700;
+  color: #ffffff;
+  text-decoration: none;
+
+  &--light {
+    background-color: $light-turquoise;
+  }
+
+  &--dark {
+    background-color: $dark-turquoise;
+  }
+}

@@ -1,0 +1,49 @@
+.page-footer__socials {
+  list-style: none;
+}
+
+.page-footer__logo {
+
+  &--clickable:focus path,
+  &--clickable:hover path {
+    fill: #46c1ae;
+  }
+
+  &--clickable:active path {
+    fill: #46c1ae;
+    opacity: 0.3;
+  }
+}
+
+.page-footer__social-icon {
+
+  &:focus path,
+  &:hover path {
+    fill: #46c1ae;
+  }
+
+  &:active path {
+    fill: #46c1ae;
+    opacity: 0.3;
+  }
+}
+
+.page-footer__copyright {
+  text-decoration: none;
+  color: #000000;
+
+  &:focus path,
+  &:hover path {
+    fill: #46c1ae;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+}
+
+.page-footer__copyright-text {
+  font-size: 19px;
+  line-height: 18px;
+  font-weight: 700;
+}
