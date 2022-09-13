@@ -16,7 +16,7 @@
       <img class="page-header__logo-image" src="img/header/mishka-logo-mobile.svg" alt="Магазин игрушек Мишка"
            width="86" height="35">
     </a>
-    <button class="page-header__menu-opener">menu</button>
+    <button class="page-header__menu-opener" type="button">menu</button>
     <nav class="page-header__menu1 main-menu">
       <ul class="main-menu__list">
         <li class="main-menu__item">
@@ -97,7 +97,7 @@
       <img class="week-product__product-image" src="img/index/knitted-baskets-mobile.jpg" alt="Вязанные корзинки"
            width="260" height="315">
       <p class="week-product__product-cost">Цена: 990 руб.</p>
-      <button class="week-product__product-order button">Заказать</button>
+      <button class="week-product__product-order button" type="button">Заказать</button>
     </section>
 
     <section class="about-us">
@@ -150,7 +150,7 @@
 
     <section class="feedback">
       <h2 class="feedback__title">Отзывы</h2>
-      <button class="feedback__write button">Написать</button>
+      <button class="feedback__write button" type="button">Написать</button>
       <p class="feedback__message">
         Я молодая мама, но всё равно фотографии не набирали и близко такого количества лайков, как у популярных инстамамочек.
         В отчаянии, я накупила аксессуаров и игрушек в Мишке, и мои фотографии сразу стали более стильными,
@@ -159,10 +159,10 @@
       <strong class="feedback__author-name">Анастасия Красильникова</strong><br>
       <span class="feedback__author-at">@misssssiskras</span>
       <div class="feedback__navigation">
-        <button class="feedback__nav-button feedback__nav-button--prev">prev</button>
-        <button class="feedback__nav-button feedback__nav-button--next">next</button>
+        <button class="feedback__nav-button feedback__nav-button--prev" type="button">prev</button>
+        <button class="feedback__nav-button feedback__nav-button--next" type="button">next</button>
       </div>
-      <button class="feedback__write button">Написать</button>
+      <button class="feedback__write button" type="button">Написать</button>
     </section>
 
     <section class="contacts">
@@ -183,12 +183,12 @@
           </span>
         </li>
       </ul>
-      <button class="contacts__write_us button">Напишите нам</button>
+      <button class="contacts__write_us button" type="button">Напишите нам</button>
       <div class="contacts__map map">
         <img class="map__image" src="img/index/map-mobile.jpg" alt="Наш адрес город Санкт-Петербург,
         улица Большая Конюшенная, дом 19/8, офис 101" width="320" height="455">
       </div>
-      <button class="contacts__write_us button">Напишите нам</button>
+      <button class="contacts__write_us button" type="button">Напишите нам</button>
     </section>
 
   </main>
@@ -241,19 +241,30 @@
 
   <section class="pop-up add-to-cart">
     <h2 class="add-to-cart__title">Добавить в корзину</h2>
-    <p class="add-to-cart__text">Выберите размер:</p>
-    <ul class="add-to-cart__list">
-      <li class="add-to-cart__item">
-        <button class="add-to-cart__size add-to-cart__size--active">s</button>
-      </li>
-      <li class="add-to-cart__item">
-        <button class="add-to-cart__size">m</button>
-      </li>
-      <li class="add-to-cart__item">
-        <button class="add-to-cart__size">l</button>
-      </li>
-    </ul>
-    <button class="add-to-cart__add">Добавить</button>
+    <form method="post" action="http://echo.htmlacademy.ru">
+      <p class="add-to-cart__text">Выберите размер:</p>
+      <ul class="add-to-cart__list">
+        <li class="add-to-cart__item">
+          <label class="add-to-cart__size">
+            <input class="add-to-cart__size-input visually-hidden" type="radio" name="size" value="s" checked>
+            <span class="add-to-cart__size-marker">s</span>
+          </label>
+        </li>
+        <li class="add-to-cart__item">
+          <label class="add-to-cart__size">
+            <input class="add-to-cart__size-input visually-hidden" type="radio" name="size" value="m">
+            <span class="add-to-cart__size-marker">m</span>
+          </label>
+        </li>
+        <li class="add-to-cart__item">
+          <label class="add-to-cart__size">
+            <input class="add-to-cart__size-input visually-hidden" type="radio" name="size" value="l">
+            <span class="add-to-cart__size-marker">l</span>
+          </label>
+        </li>
+      </ul>
+      <button class="add-to-cart__add" type="submit">Добавить</button>
+    </form>
   </section>
 
 </body>

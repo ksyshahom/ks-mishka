@@ -1,0 +1,52 @@
+.catalog__item {
+  font-family: inherit;
+
+  background: transparent;
+  border: none;
+
+  &:hover {
+    box-shadow: 0 0 10px 2px rgba(0, 0, 0, 0.15);
+  }
+
+  &:active {
+    box-shadow: 0 0 10px 2px rgba(0, 0, 0, 0.08);
+  }
+}
+
+.catalog__name {
+  font-size: 20px;
+  line-height: 24px;
+  font-weight: 700;
+  color: #000000;
+  text-decoration: none;
+
+  &:focus,
+  &:hover {
+    opacity: 0.6;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+}
+
+.catalog__desc {
+  font-size: 15px;
+  line-height: 30px;
+  color: $dark-grey-text;
+}
+
+.catalog__cost {
+  font-size: 17px;
+  line-height: 24px;
+  font-weight: 700;
+}
+
+.catalog__cart {
+  background: transparent;
+  border: none;
+}
+
+.catalog__video-desc {
+
+}

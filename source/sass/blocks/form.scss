@@ -1,0 +1,55 @@
+.form__fieldset {
+  border: none;
+
+  &--gray {
+    background-color: #f1f1f1;
+  }
+}
+
+.form__fieldset-title {
+  font-size: 17px;
+  line-height: 16px;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: $light-turquoise;
+}
+
+.form__label {
+  font-size: 19px;
+  line-height: 18px;
+  font-weight: 700;
+}
+
+.form__text-input {
+  font-family: inherit;
+  font-size: 19px;
+  line-height: 18px;
+  color: $dark-grey-text;
+
+  background-color: transparent;
+  border: none;
+  border-bottom: 2px #000000 solid;
+
+  &--textarea {
+    height: 100px;
+    resize: none;
+
+    border: 2px #000000 solid;
+  }
+
+  &::placeholder {
+    opacity: 0.3;
+  }
+
+  &:focus,
+  &:hover {
+    border-color: $light-turquoise;
+    outline: none;
+  }
+}
+
+.form__disclaimer {
+  font-size: 17px;
+  line-height: 30px;
+  color: $dark-grey-text;
+}

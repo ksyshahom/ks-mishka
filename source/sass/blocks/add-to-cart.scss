@@ -16,6 +16,10 @@
 }
 
 .add-to-cart__size {
+  cursor: pointer;
+}
+
+.add-to-cart__size-marker {
   font-family: inherit;
   font-size: 17px;
   line-height: 16px;
@@ -33,10 +37,10 @@
   &:active {
     border-color: $light-turquoise;
   }
+}
 
-  &--active,
-  &--active:focus,
-  &--active:hover {
+.add-to-cart__size-input {
+  &:checked + .add-to-cart__size-marker {
     border-color: $light-turquoise;
   }
 }

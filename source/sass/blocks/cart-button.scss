@@ -1,0 +1,12 @@
+.cart-button {
+  &:focus path,
+  &:hover path {
+    fill: $light-turquoise;
+    opacity: 1;
+  }
+
+  &:active path {
+    fill: $light-turquoise;
+    opacity: 0.3;
+  }
+}
