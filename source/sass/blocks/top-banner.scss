@@ -3,13 +3,32 @@
 
   &--index{
     background-image: url("../../img/index/hero-mobile.jpg");
+    background-repeat: no-repeat;
+    background-position: center top;
   }
 }
 
 .top-banner__title {
+  padding-top: 50px;
+  padding-bottom: 50px;
+
   font-weight: 700;
   font-size: 27px;
   line-height: 30px;
 
   text-align: center;
+}
+
+@media (min-width: $tablet-width) {
+  .top-banner__title {
+    font-size: 43px;
+    line-height: 50px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .top-banner__title {
+    font-size: 53px;
+    line-height: 57px;
+  }
 }
