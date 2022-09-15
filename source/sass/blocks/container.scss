@@ -1,4 +1,19 @@
 .container {
-  margin: 0 auto;
-  width: 260px;
+  margin: 0;
+  padding: 0 30px;
+  width: 100%;
+}
+
+@media (min-width: $tablet-width) {
+  .container {
+    margin: 0 auto;
+    padding: 0 50px;
+    width: $tablet-width;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .container {
+    width: $desktop-width;
+  }
 }

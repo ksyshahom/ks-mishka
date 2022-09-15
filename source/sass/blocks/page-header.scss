@@ -1,8 +1,41 @@
 .page-header {
+  position: relative;
+}
 
+.page-header__logo {
+  &--mobile {
+    position: relative;
+
+    display: flex;
+    justify-content: center;
+  }
+
+  &--tablet {
+    display: none;
+  }
+
+  &--desktop {
+    display: none;
+  }
+}
+
+.page-header__logo-link {
+  text-decoration: none;
+
+  &--clickable:focus,
+  &--clickable:hover {
+    opacity: 0.6;
+  }
+
+  &--clickable:active {
+    opacity: 0.3;
+  }
 }
 
 .page-header__menu-opener {
+  position: absolute;
+  right: 0;
+
   background-color: transparent;
   border: none;
   cursor: pointer;
@@ -16,11 +49,23 @@
   }
 }
 
-.page-header__menu2 {
-  list-style: none;
+.page-header__main-wrapper {
+  position: relative;
+
+  display: flex;
+  flex-direction: column;
 }
 
-.page-header__menu2-link {
+.page-header__second-wrapper {
+  order: 2;
+}
+
+.page-header__add-menu {
+  @include reset-list;
+  display: none;
+}
+
+.page-header__add-menu-link {
   font-size: 15px;
   line-height: 24px;
   font-weight: 700;
@@ -29,7 +74,75 @@
 }
 
 .page-header__delivery {
+  position: absolute;
+
+  display: none;
+
   font-size: 15px;
   line-height: 24px;
   color: $dark-grey-text;
+}
+
+@media (min-width: $tablet-width) {
+  .page-header__logo {
+    &--mobile {
+      display: none;
+    }
+
+    &--tablet {
+      display: inline;
+    }
+  }
+
+  .page-header__nav1 {
+    position: absolute;
+    top: 50px;
+  }
+
+  .page-header__second-wrapper {
+    display: flex;
+    justify-content: space-between;
+    order: 0;
+  }
+
+  .page-header__delivery {
+    right: 50px;
+    display: inline;
+  }
+}
+
+@media (min-width: $desktop-width) {
+
+  .page-header__logo {
+    &--mobile {
+      display: none;
+    }
+
+    &--tablet {
+      display: none;
+    }
+
+    &--desktop {
+      display: inline;
+    }
+  }
+
+  .page-header__main-wrapper {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .page-header__nav1 {
+    position: static;
+  }
+
+  .page-header__second-wrapper {
+    width: 600px;
+
+    order: 2;
+  }
+
+  .page-header__add-menu {
+    display: flex;
+  }
 }

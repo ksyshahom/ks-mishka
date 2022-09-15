@@ -6,7 +6,7 @@
 }
 
 .main-menu__list {
-  list-style: none;
+  @include reset-list;
 }
 
 .main-menu__item-link {
@@ -29,22 +29,22 @@
   }
 }
 
-.main-menu__search-input {
-  font: inherit;
-
-  border: none;
-  background-color: transparent;
-  cursor: pointer;
-
-  &::placeholder {
-    color: #000000;
+@media (min-width: $tablet-width) {
+  .main-menu {
+    &--nav {
+      font-size: 15px;
+    }
   }
 
-  &:hover::placeholder {
-    opacity: 0.6;
+  .main-menu__list {
+    display: flex;
   }
+}
 
-  &:focus::placeholder {
-    opacity: 0.3;
+@media (min-width: $desktop-width) {
+  .main-menu {
+    &--nav {
+      font-size: 17px;
+    }
   }
 }

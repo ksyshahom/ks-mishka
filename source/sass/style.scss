@@ -1,14 +1,10 @@
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap');
+//шрифты, переменные и scaffolding
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap");
 @import "variables.scss";
+@import "mixins.scss";
+@import "scaffolding.scss";
 
-*, *::before, *::after {
-  box-sizing: border-box;
-}
-img {
-  max-width: 100%;
-  height: auto;
-}
-
+//общие блоки
 @import "blocks/visually-hidden.scss";
 @import "blocks/button.scss";
 @import "blocks/cart-button.scss";
@@ -16,10 +12,10 @@ img {
 @import "blocks/form.scss";
 @import "blocks/container.scss";
 
+//остальные блоки
 @import "blocks/page-body.scss";
 @import "blocks/page-header.scss";
 @import "blocks/page-footer.scss";
-
 @import "blocks/main-menu.scss";
 @import "blocks/top-banner.scss";
 @import "blocks/categories.scss";

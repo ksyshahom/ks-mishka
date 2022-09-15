@@ -4,8 +4,9 @@
   margin: 0;
   padding: 0;
   min-height: 100vh;
+  min-width: $mobile-width;
 
-  font-family: 'Open Sans', Arial, sans-serif;
+  font-family: "Open Sans", "Arial", sans-serif;
 }
 
 .page-body__footer {
