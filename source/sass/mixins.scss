@@ -3,3 +3,7 @@
   padding: 0;
   list-style: none;
 }
+
+@mixin desktop-margin {
+  margin-left: 175px;
+}

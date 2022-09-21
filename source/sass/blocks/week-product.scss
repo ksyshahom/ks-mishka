@@ -18,16 +18,140 @@
   color: $dark-grey-text;
 }
 
-.week-product__product-stats {
-  font-size: 15px;
-  line-height: 20px;
-  color: $dark-grey-text;
+.week-product__title-wrapper-desk {
+  display: none;
 }
 
-.week-product__product-cost {
+.week-product__image-wrapper {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+
+  &--tablet {
+    display: none;
+  }
+
+  &--desktop {
+    display: none;
+  }
+}
+
+.week-product__image {
+  display: block;
+}
+
+.week-product__cost {
   font-size: 17px;
   line-height: 24px;
   font-weight: 700;
   color: $dark-grey-text;
   text-align: center;
+}
+
+.week-product__order {
+  width: 100%;
+}
+
+@media (min-width: $tablet-width) {
+  .week-product__title-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+  }
+
+  .week-product__product-name {
+    font-size: 43px;
+    line-height: 50px;
+  }
+
+  .week-product__section-name {
+    width: 122px;
+    flex-shrink: 0;
+
+    line-height: 17px;
+
+    text-align: center;
+  }
+
+  .week-product__main-wrapper {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    width: 100%;
+  }
+
+  .week-product__desc-wrapper {
+    display: flex;
+    flex-direction: column;
+    width: 292px;
+  }
+
+  .week-product__product-desc {
+    font-size: 17px;
+    line-height: 30px;
+  }
+
+  .week-product__cost-wrapper {
+    margin-top: auto;
+  }
+
+  .week-product__cost {
+    font-size: 20px;
+    line-height: 24px;
+  }
+
+  .week-product__image-wrapper {
+    width: auto;
+
+    &--mobile {
+      display: none;
+    }
+
+    &--tablet {
+      display: block;
+    }
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .week-product__title-wrapper {
+    display: none;
+  }
+
+  .week-product__title-wrapper-desk {
+    display: flex;
+    align-items: center;
+
+    margin-left: -175px;
+    margin-right: -280px;
+  }
+
+  .week-product__section-name {
+    width: 175px;
+    padding: 0 25px;
+  }
+
+  .week-product__product-name {
+    position: relative;
+    z-index: 2;
+    width: 280px + 292px;
+
+    font-size: 53px;
+    line-height: 57px;
+  }
+
+  .week-product__desc-wrapper {
+    @include desktop-margin;
+  }
+
+  .week-product__image-wrapper {
+    &--tablet {
+      display: none;
+    }
+
+    &--desktop {
+      display: block;
+    }
+  }
 }

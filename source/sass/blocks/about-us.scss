@@ -4,12 +4,43 @@
   font-weight: 700;
 }
 
-.about-us__list {
-  list-style: none;
-}
-
 .about-us__advantage {
   font-size: 17px;
   line-height: 20px;
   font-weight: 700;
+}
+
+@media (min-width: $tablet-width) {
+  .about-us__title {
+    font-size: 43px;
+    line-height: 50px;
+  }
+
+  .about-us__list {
+    display: flex;
+  }
+
+  .about-us__col {
+    width: 50%;
+  }
+
+  .about-us__advantage {
+    font-size: 20px;
+    line-height: 22px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .about-us__title {
+    @include desktop-margin;
+    margin-right: 175px;
+
+    font-size: 53px;
+    line-height: 57px;
+  }
+
+  .about-us__list {
+    @include desktop-margin;
+    margin-right: 175px;
+  }
 }
