@@ -28,6 +28,10 @@
 .page-header__logo-link {
   text-decoration: none;
 
+  &--clickable {
+    cursor: pointer;
+  }
+
   &--clickable:focus,
   &--clickable:hover {
     opacity: 0.6;
@@ -183,6 +187,7 @@
   .page-header__nav1 {
     position: absolute;
     top: 76px;
+    z-index: 1;
   }
 
   .page-header__second-wrapper {
@@ -230,6 +235,8 @@
   }
 
   .page-header__add-menu {
+    z-index: 1;
+
     display: flex;
   }
 }
