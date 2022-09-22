@@ -1,7 +1,50 @@
+.about-us {
+  margin-bottom: 55px;
+}
+
 .about-us__title {
+  margin-bottom: 31px;
+
   font-size: 25px;
   line-height: 30px;
   font-weight: 700;
+}
+
+.about-us__item {
+  margin-bottom: 28px;
+}
+
+.about-us__icon {
+  width: 55px;
+  height: 38px;
+  margin-bottom: 13px;
+
+  background-position: center left;
+  background-repeat: no-repeat;
+
+  &--flower {
+    background-image: url("../../img/index/icon-flower.svg");
+  }
+
+  &--money {
+    background-image: url("../../img/index/icon-money.svg");
+  }
+
+  &--heart {
+    background-image: url("../../img/index/icon-heart.svg");
+  }
+
+  &--knidle {
+    background-image: url("../../img/index/icon-knidle.svg");
+  }
+
+  &--rocket {
+    background-image: url("../../img/index/icon-rocket.svg");
+  }
+
+  &--present {
+    background-image: url("../../img/index/icon-present.svg");
+  }
 }
 
 .about-us__advantage {
@@ -11,7 +54,13 @@
 }
 
 @media (min-width: $tablet-width) {
+  .about-us {
+    margin-bottom: 26px;
+  }
+
   .about-us__title {
+    margin-bottom: 51px;
+
     font-size: 43px;
     line-height: 50px;
   }
@@ -24,6 +73,10 @@
     width: 50%;
   }
 
+  .about-us__item {
+     margin-bottom: 57px;
+  }
+
   .about-us__advantage {
     font-size: 20px;
     line-height: 22px;
@@ -31,6 +84,10 @@
 }
 
 @media (min-width: $desktop-width) {
+  .about-us {
+    margin-bottom: 32px;
+  }
+
   .about-us__title {
     @include desktop-margin;
     margin-right: 175px;

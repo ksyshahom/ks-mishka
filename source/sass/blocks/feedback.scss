@@ -1,4 +1,29 @@
+.feedback {
+  position: relative;
+
+  padding-bottom: 51px;
+  margin-bottom: 35px;
+
+  &::after {
+    content: "";
+    position: absolute;
+    bottom: -1px;
+    left: 0;
+
+    width: 100%;
+    height: 6px;
+
+    background-color: transparent;
+    background-image: url("../../img/zigzag-line.svg");
+    background-position: center;
+    background-repeat: repeat-x;
+  }
+}
+
 .feedback__title {
+  margin-top: 0;
+  margin-bottom: 24px;
+
   font-size: 25px;
   line-height: 30px;
   font-weight: 700;
@@ -9,9 +34,16 @@
 }
 
 .feedback__message {
+  margin-top: 0;
+  margin-bottom: 26px;
+
   font-size: 15px;
   line-height: 30px;
   color: $dark-grey-text;
+}
+
+.feedback__author {
+  margin-bottom: 33px;
 }
 
 .feedback__author-name {
@@ -29,13 +61,26 @@
 .feedback__navigation {
   display: flex;
   width: 100%;
+  margin-bottom: 38px;
 }
 
 .feedback__nav-button {
   width: 50%;
+  height: 51px;
+  padding: 0;
 
   background-color: #ffffff;
+  background-repeat: no-repeat;
+  background-position: center;
   border: 1px #ececec solid;
+
+  &--prev {
+    background-image: url("../../img/index/arrow-left.svg");
+  }
+
+  &--next {
+    background-image: url("../../img/index/arrow-right.svg");
+  }
 
   &:focus,
   &:hover {
@@ -53,16 +98,29 @@
 
 @media (min-width: $tablet-width) {
   .feedback {
+    padding-bottom: 97px;
+    margin-bottom: 60px;
+
     background-image: url("../../img/index/feedback-bg.jpg");
     background-repeat: no-repeat;
+
+    &::after {
+      height: 17px;
+
+      background-size: contain;
+    }
   }
 
   .feedback__wrapper {
     display: flex;
     justify-content: space-between;
+    align-items: start;
   }
 
   .feedback__title {
+    margin-top: 75px;
+    margin-bottom: 50px;
+
     font-size: 43px;
     line-height: 50px;
   }
@@ -71,6 +129,7 @@
     display: inline-block;
     width: 175px;
     flex-shrink: 0;
+    margin-top: 80px;
   }
 
   .feedback__write2 {
@@ -78,6 +137,8 @@
   }
 
   .feedback__message {
+    margin-bottom: 61px;
+
     font-size: 17px;
   }
 
@@ -97,7 +158,16 @@
 
 @media (min-width: $desktop-width) {
   .feedback {
+    padding-bottom: 150px;
+    margin-bottom: 70px;
+
     background-position: 50px top;
+
+    &::after {
+      height: 23px;
+      width: 1050px;
+      margin: 0 50px;
+    }
   }
 
   .feedback__wrapper {
@@ -106,6 +176,7 @@
 
   .feedback__message {
     @include desktop-margin;
+    margin-bottom: 35px;
   }
 
   .feedback__title {

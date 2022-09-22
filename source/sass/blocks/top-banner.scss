@@ -9,26 +9,48 @@
 }
 
 .top-banner__title {
-  padding-top: 50px;
-  padding-bottom: 50px;
-
   font-weight: 700;
   font-size: 27px;
   line-height: 30px;
 
   text-align: center;
+
+  &--index {
+    padding-top: 70px;
+    padding-bottom: 122px;
+  }
 }
 
 @media (min-width: $tablet-width) {
+  .top-banner {
+    &--index {
+      background-image: url("../../img/index/hero-tablet.jpg");
+    }
+  }
+
   .top-banner__title {
     font-size: 43px;
     line-height: 50px;
+
+    &--index {
+      padding-top: 152px;
+      padding-bottom: 374px;
+    }
   }
 }
 
 @media (min-width: $desktop-width) {
+  .top-banner {
+    &--index {
+      background-image: url("../../img/index/hero-desktop.jpg");
+    }
+  }
   .top-banner__title {
     font-size: 53px;
     line-height: 57px;
+
+    &--index {
+      padding-bottom: 360px;
+    }
   }
 }
