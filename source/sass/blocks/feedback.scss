@@ -101,8 +101,19 @@
     padding-bottom: 97px;
     margin-bottom: 60px;
 
-    background-image: url("../../img/index/feedback-bg.jpg");
+    background-image: url("../img/index/feedback-bg.jpg");
+    background-image:
+      -webkit-image-set(
+          url("../img/index/feedback-bg.jpg") 1x,
+          url("../img/index/feedback-bg@2x.jpg") 2x,
+      );
+    background-image:
+      image-set(
+          url("../img/index/feedback-bg.jpg") 1x,
+          url("../img/index/feedback-bg@2x.jpg") 2x,
+      );
     background-repeat: no-repeat;
+    background-size: 350px auto;
 
     &::after {
       height: 17px;

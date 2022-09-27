@@ -101,62 +101,90 @@
     <section class="catalog container">
       <div class="catalog__item">
         <a class="catalog__image-link" href="#">
-          <img class="catalog__image" src="img/catalog/photo-1-mobile_1.png" alt="Зайчик-попрыгайчик"
-               width="260" height="195">
+          <picture>
+            <source media="(min-width: 1150px)" srcset="img/catalog/toy-hare-desktop.jpg 1x,
+            img/catalog/toy-hare-desktop@2x.jpg 2x" />
+            <source media="(min-width: 768px)" srcset="img/catalog/toy-hare-tablet.jpg 1x,
+            img/catalog/toy-hare-tablet@2x.jpg 2x" />
+            <img class="catalog__image" src="img/catalog/toy-hare.jpg" alt="Зайчик-попрыгайчик">
+          </picture>
         </a>
         <div class="catalog__desc-wrapper">
           <a class="catalog__name" href="#">Зайчик-попрыгайчик</a>
-          <span class="catalog__desc">Рост 30 см, вес 200 г</span>
-          <span class="catalog__cost">1 200 руб.</span>
-          <button class="catalog__cart cart-button" type="button">
-            <svg width="21" height="18" viewBox="0 0 21 18" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <path opacity="0.2" d="M20.1884 6.85716H16.6377L13.1884 0.380944C12.9855 -8.61287e-06 12.5797 -0.0952351 12.1739 0.0952412C11.7681 0.285717 11.6667 0.66667 11.8696 1.04762L15.0145 6.85716H5.7826L8.92753 1.04762C9.13043 0.66667 8.92754 0.285717 8.6232 0.0952412C8.2174 -0.0952351 7.8116 0.0952295 7.6087 0.380944L4.1594 6.85716H0.811583C0.405785 6.85716 0 7.14286 0 7.61905C0 8 0.304336 8.38094 0.811583 8.38094H1.01449L1.92753 11.2381C1.72463 11.3333 1.62317 11.5238 1.62317 11.8095C1.62317 12.1905 1.92753 12.4762 2.33332 12.4762L4.05797 18H16.942L18.6667 12.4762C19.0725 12.4762 19.3768 12.1905 19.3768 11.8095C19.3768 11.619 19.2754 11.3333 19.0725 11.2381L19.9855 8.38094H20.1884C20.5942 8.38094 21 8.09524 21 7.61905C21 7.14286 20.5942 6.85716 20.1884 6.85716ZM15.6232 16.4762H5.07247L3.85506 12.381H16.942L15.6232 16.4762ZM17.2464 10.9524H3.34782L2.53623 8.28573H18.058L17.2464 10.9524Z" fill="#000000"/>
-            </svg>
-          </button>
+          <div class="catalog__desc">Рост 30 см, вес 200 г</div>
+          <div class="catalog__cart-wrapper">
+            <div class="catalog__cost">1 200 руб.</div>
+            <button class="catalog__cart cart-button" type="button">
+              <svg width="21" height="18" viewBox="0 0 21 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path opacity="0.2" d="M20.1884 6.85716H16.6377L13.1884 0.380944C12.9855 -8.61287e-06 12.5797 -0.0952351 12.1739 0.0952412C11.7681 0.285717 11.6667 0.66667 11.8696 1.04762L15.0145 6.85716H5.7826L8.92753 1.04762C9.13043 0.66667 8.92754 0.285717 8.6232 0.0952412C8.2174 -0.0952351 7.8116 0.0952295 7.6087 0.380944L4.1594 6.85716H0.811583C0.405785 6.85716 0 7.14286 0 7.61905C0 8 0.304336 8.38094 0.811583 8.38094H1.01449L1.92753 11.2381C1.72463 11.3333 1.62317 11.5238 1.62317 11.8095C1.62317 12.1905 1.92753 12.4762 2.33332 12.4762L4.05797 18H16.942L18.6667 12.4762C19.0725 12.4762 19.3768 12.1905 19.3768 11.8095C19.3768 11.619 19.2754 11.3333 19.0725 11.2381L19.9855 8.38094H20.1884C20.5942 8.38094 21 8.09524 21 7.61905C21 7.14286 20.5942 6.85716 20.1884 6.85716ZM15.6232 16.4762H5.07247L3.85506 12.381H16.942L15.6232 16.4762ZM17.2464 10.9524H3.34782L2.53623 8.28573H18.058L17.2464 10.9524Z" fill="#000000"/>
+              </svg>
+            </button>
+          </div>
         </div>
       </div>
 
       <div class="catalog__item">
         <a class="catalog__image-link" href="#">
-          <img class="catalog__image" src="img/catalog/photo-2-mobile_1.png" alt="Корзинка для белья"
-               width="260" height="195">
+          <picture>
+            <source media="(min-width: 1150px)" srcset="img/catalog/laundry-basket-desktop.jpg 1x,
+            img/catalog/laundry-basket-desktop@2x.jpg 2x" />
+            <source media="(min-width: 768px)" srcset="img/catalog/laundry-basket-tablet.jpg 1x,
+            img/catalog/laundry-basket-tablet@2x.jpg 2x" />
+            <img class="catalog__image" src="img/catalog/laundry-basket.jpg" alt="Корзинка для белья">
+          </picture>
         </a>
         <div class="catalog__desc-wrapper">
           <a class="catalog__name" href="#">Корзинка для белья</a>
-          <span class="catalog__desc">Диаметр 15 см, высота 10 см</span>
-          <span class="catalog__cost">690 руб.</span>
-          <button class="catalog__cart cart-button" type="button">
-            <svg width="21" height="18" viewBox="0 0 21 18" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <path opacity="0.2" d="M20.1884 6.85716H16.6377L13.1884 0.380944C12.9855 -8.61287e-06 12.5797 -0.0952351 12.1739 0.0952412C11.7681 0.285717 11.6667 0.66667 11.8696 1.04762L15.0145 6.85716H5.7826L8.92753 1.04762C9.13043 0.66667 8.92754 0.285717 8.6232 0.0952412C8.2174 -0.0952351 7.8116 0.0952295 7.6087 0.380944L4.1594 6.85716H0.811583C0.405785 6.85716 0 7.14286 0 7.61905C0 8 0.304336 8.38094 0.811583 8.38094H1.01449L1.92753 11.2381C1.72463 11.3333 1.62317 11.5238 1.62317 11.8095C1.62317 12.1905 1.92753 12.4762 2.33332 12.4762L4.05797 18H16.942L18.6667 12.4762C19.0725 12.4762 19.3768 12.1905 19.3768 11.8095C19.3768 11.619 19.2754 11.3333 19.0725 11.2381L19.9855 8.38094H20.1884C20.5942 8.38094 21 8.09524 21 7.61905C21 7.14286 20.5942 6.85716 20.1884 6.85716ZM15.6232 16.4762H5.07247L3.85506 12.381H16.942L15.6232 16.4762ZM17.2464 10.9524H3.34782L2.53623 8.28573H18.058L17.2464 10.9524Z" fill="#000000"/>
-            </svg>
-          </button>
+          <div class="catalog__desc">Диаметр 15 см, высота 10 см</div>
+          <div class="catalog__cart-wrapper">
+            <div class="catalog__cost">690 руб.</div>
+            <button class="catalog__cart cart-button" type="button">
+              <svg width="21" height="18" viewBox="0 0 21 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path opacity="0.2" d="M20.1884 6.85716H16.6377L13.1884 0.380944C12.9855 -8.61287e-06 12.5797 -0.0952351 12.1739 0.0952412C11.7681 0.285717 11.6667 0.66667 11.8696 1.04762L15.0145 6.85716H5.7826L8.92753 1.04762C9.13043 0.66667 8.92754 0.285717 8.6232 0.0952412C8.2174 -0.0952351 7.8116 0.0952295 7.6087 0.380944L4.1594 6.85716H0.811583C0.405785 6.85716 0 7.14286 0 7.61905C0 8 0.304336 8.38094 0.811583 8.38094H1.01449L1.92753 11.2381C1.72463 11.3333 1.62317 11.5238 1.62317 11.8095C1.62317 12.1905 1.92753 12.4762 2.33332 12.4762L4.05797 18H16.942L18.6667 12.4762C19.0725 12.4762 19.3768 12.1905 19.3768 11.8095C19.3768 11.619 19.2754 11.3333 19.0725 11.2381L19.9855 8.38094H20.1884C20.5942 8.38094 21 8.09524 21 7.61905C21 7.14286 20.5942 6.85716 20.1884 6.85716ZM15.6232 16.4762H5.07247L3.85506 12.381H16.942L15.6232 16.4762ZM17.2464 10.9524H3.34782L2.53623 8.28573H18.058L17.2464 10.9524Z" fill="#000000"/>
+              </svg>
+            </button>
+          </div>
         </div>
       </div>
 
       <div class="catalog__item">
         <a class="catalog__image-link" href="#">
-          <img class="catalog__image" src="img/catalog/photo-3-mobile_1.png" alt="Большая корзина для игрушек"
-               width="260" height="195">
+          <picture>
+            <source media="(min-width: 1150px)" srcset="img/catalog/basket-with-toy-animals-desktop.jpg 1x,
+            img/catalog/basket-with-toy-animals-desktop@2x.jpg 2x" />
+            <source media="(min-width: 768px)" srcset="img/catalog/basket-with-toy-animals-tablet.jpg 1x,
+            img/catalog/basket-with-toy-animals-tablet@2x.jpg 2x" />
+            <img class="catalog__image" src="img/catalog/basket-with-toy-animals.jpg" alt="Большая корзина для игрушек">
+          </picture>
         </a>
         <div class="catalog__desc-wrapper">
           <a class="catalog__name" href="#">Большая корзина для игрушек</a>
-          <span class="catalog__desc">Диаметр 30 см, высота 30 см</span>
-          <span class="catalog__cost">1 500 руб.</span>
-          <button class="catalog__cart cart-button" type="button">
-            <svg width="21" height="18" viewBox="0 0 21 18" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <path opacity="0.2" d="M20.1884 6.85716H16.6377L13.1884 0.380944C12.9855 -8.61287e-06 12.5797 -0.0952351 12.1739 0.0952412C11.7681 0.285717 11.6667 0.66667 11.8696 1.04762L15.0145 6.85716H5.7826L8.92753 1.04762C9.13043 0.66667 8.92754 0.285717 8.6232 0.0952412C8.2174 -0.0952351 7.8116 0.0952295 7.6087 0.380944L4.1594 6.85716H0.811583C0.405785 6.85716 0 7.14286 0 7.61905C0 8 0.304336 8.38094 0.811583 8.38094H1.01449L1.92753 11.2381C1.72463 11.3333 1.62317 11.5238 1.62317 11.8095C1.62317 12.1905 1.92753 12.4762 2.33332 12.4762L4.05797 18H16.942L18.6667 12.4762C19.0725 12.4762 19.3768 12.1905 19.3768 11.8095C19.3768 11.619 19.2754 11.3333 19.0725 11.2381L19.9855 8.38094H20.1884C20.5942 8.38094 21 8.09524 21 7.61905C21 7.14286 20.5942 6.85716 20.1884 6.85716ZM15.6232 16.4762H5.07247L3.85506 12.381H16.942L15.6232 16.4762ZM17.2464 10.9524H3.34782L2.53623 8.28573H18.058L17.2464 10.9524Z" fill="#000000"/>
-            </svg>
-          </button>
+          <div class="catalog__desc">Диаметр 30 см, высота 30 см</div>
+          <div class="catalog__cart-wrapper">
+            <div class="catalog__cost">1 500 руб.</div>
+            <button class="catalog__cart cart-button" type="button">
+              <svg width="21" height="18" viewBox="0 0 21 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path opacity="0.2" d="M20.1884 6.85716H16.6377L13.1884 0.380944C12.9855 -8.61287e-06 12.5797 -0.0952351 12.1739 0.0952412C11.7681 0.285717 11.6667 0.66667 11.8696 1.04762L15.0145 6.85716H5.7826L8.92753 1.04762C9.13043 0.66667 8.92754 0.285717 8.6232 0.0952412C8.2174 -0.0952351 7.8116 0.0952295 7.6087 0.380944L4.1594 6.85716H0.811583C0.405785 6.85716 0 7.14286 0 7.61905C0 8 0.304336 8.38094 0.811583 8.38094H1.01449L1.92753 11.2381C1.72463 11.3333 1.62317 11.5238 1.62317 11.8095C1.62317 12.1905 1.92753 12.4762 2.33332 12.4762L4.05797 18H16.942L18.6667 12.4762C19.0725 12.4762 19.3768 12.1905 19.3768 11.8095C19.3768 11.619 19.2754 11.3333 19.0725 11.2381L19.9855 8.38094H20.1884C20.5942 8.38094 21 8.09524 21 7.61905C21 7.14286 20.5942 6.85716 20.1884 6.85716ZM15.6232 16.4762H5.07247L3.85506 12.381H16.942L15.6232 16.4762ZM17.2464 10.9524H3.34782L2.53623 8.28573H18.058L17.2464 10.9524Z" fill="#000000"/>
+              </svg>
+            </button>
+          </div>
         </div>
       </div>
 
-      <div class="catalog__item catalog__production">
-        <span class="catalog__name catalog__name--video-icon">Процесс производства</span>
-        <div class="catalog__video"></div>
-        <span class="catalog__name catalog__name--video-icon">Процесс производства</span>
-        <p class="catalog__desc">По просьбам наших любимых фолловеров мы сняли для вас подробное видео о том,
-          как появляются наши товары.</p>
-        <a class="catalog__order button" href="/knitting.html">Сделать заказ</a>
+      <div class="catalog__item catalog__item--production">
+        <div class="catalog__name catalog__name--video-mob catalog__name--video-icon">Процесс производства</div>
+        <div class="catalog__video">
+          <button class="catalog__video-btn" type="button">
+            <span class="visually-hidden">Воспроизвести видео</span>
+          </button>
+          <iframe class="catalog__video-iframe" src="https://www.youtube.com/embed/dQw4w9WgXcQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+        <div class="catalog__video-desc-wrapper">
+          <div class="catalog__name catalog__name--video-notmob catalog__name--video-icon">Процесс производства</div>
+          <p class="catalog__desc catalog__desc--video">По просьбам наших любимых фолловеров мы сняли для вас подробное видео о том,
+            как появляются наши товары.</p>
+          <a class="catalog__order button" href="/knitting.html">Сделать заказ</a>
+        </div>
       </div>
     </section>
 
@@ -266,6 +294,7 @@
 <div class="page-body__block"></div>
 
 <script src="js/main-menu.js"></script>
+<script src="js/video.js"></script>
 
 </body>
 </html>

@@ -66,11 +66,7 @@
     margin-bottom: 24px;
   }
 
-  &--tablet {
-    display: none;
-  }
-
-  &--desktop {
+  &--not-mobile {
     display: none;
   }
 }
@@ -169,7 +165,7 @@
       display: none;
     }
 
-    &--tablet {
+    &--not-mobile {
       display: block;
     }
   }
@@ -223,12 +219,9 @@
   }
 
   .week-product__image-wrapper {
-    &--tablet {
-      display: none;
-    }
-
-    &--desktop {
-      display: block;
+    &--not-mobile {
+      width: 525px;
+      height: 636px;
     }
   }
 }

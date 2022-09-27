@@ -1,4 +1,6 @@
 .cart-button {
+  padding: 0;
+
   &:focus path,
   &:hover path {
     fill: $light-turquoise;
