@@ -172,15 +172,14 @@
       </div>
 
       <div class="catalog__item catalog__item--production">
-        <div class="catalog__name catalog__name--video-mob catalog__name--video-icon">Процесс производства</div>
+        <div class="catalog__video-name catalog__video-name--mob">Процесс производства</div>
         <div class="catalog__video">
           <button class="catalog__video-btn" type="button">
             <span class="visually-hidden">Воспроизвести видео</span>
           </button>
-          <iframe class="catalog__video-iframe" src="https://www.youtube.com/embed/dQw4w9WgXcQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
         </div>
         <div class="catalog__video-desc-wrapper">
-          <div class="catalog__name catalog__name--video-notmob catalog__name--video-icon">Процесс производства</div>
+          <div class="catalog__video-name catalog__video-name--notmob">Процесс производства</div>
           <p class="catalog__desc catalog__desc--video">По просьбам наших любимых фолловеров мы сняли для вас подробное видео о том,
             как появляются наши товары.</p>
           <a class="catalog__order button" href="/knitting.html">Сделать заказ</a>
@@ -266,6 +265,7 @@
 <section class="pop-up add-to-cart">
   <h2 class="add-to-cart__title">Добавить в корзину</h2>
   <form method="post" action="http://echo.htmlacademy.ru">
+    <input class="add-to-cart__product" type="text" name="product">
     <p class="add-to-cart__text">Выберите размер:</p>
     <ul class="add-to-cart__list">
       <li class="add-to-cart__item">
@@ -295,6 +295,7 @@
 
 <script src="js/main-menu.js"></script>
 <script src="js/video.js"></script>
+<script src="js/pop-up-add-to-cart-catalog.js"></script>
 
 </body>
 </html>

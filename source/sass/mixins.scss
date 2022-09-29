@@ -4,6 +4,12 @@
   list-style: none;
 }
 
+@mixin reset-fieldset {
+  margin: 0;
+  padding: 0;
+  border: none;
+}
+
 @mixin desktop-margin {
   margin-left: 175px;
 }

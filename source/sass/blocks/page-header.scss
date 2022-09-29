@@ -199,6 +199,8 @@
   .page-header__delivery {
     right: 50px;
     bottom: -42px;
+    z-index: 1;
+
     display: inline;
   }
 }

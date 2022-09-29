@@ -39,6 +39,39 @@
   border: 1px #ededed solid;
 }
 
+.catalog__video-name {
+  position: relative;
+
+  display: block;
+  margin-top: 23px;
+  margin-bottom: 26px;
+  padding-left: 88px;
+  padding-right: 20px;
+
+  font-size: 17px;
+  line-height: 24px;
+  font-weight: 700;
+  color: #000000;
+  text-decoration: none;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 12px;
+    left: 33px;
+
+    width: 32px;
+    height: 22px;
+
+    background-image: url("../img/catalog/video.svg");
+    background-repeat: no-repeat;
+  }
+
+  &--notmob {
+    display: none;
+  }
+}
+
 .catalog__name {
   display: block;
   margin-bottom: 6px;
@@ -48,34 +81,6 @@
   font-weight: 700;
   color: #000000;
   text-decoration: none;
-
-  &--video-icon {
-    position: relative;
-
-    &::before {
-      content: "";
-      position: absolute;
-      top: 12px;
-      left: 33px;
-
-      width: 32px;
-      height: 22px;
-
-      background-image: url("../../img/catalog/video.svg");
-      background-repeat: no-repeat;
-    }
-  }
-
-  &--video-mob {
-    margin-top: 23px;
-    margin-bottom: 26px;
-    padding-left: 88px;
-    padding-right: 20px;
-  }
-
-  &--video-notmob {
-    display: none;
-  }
 
   &:focus,
   &:hover {
@@ -126,7 +131,7 @@
   width: 100%;
   padding-bottom: 58%;
 
-  background-image: url("../../img/catalog/video-cover.jpg");
+  background-image: url("../img/catalog/video-cover.jpg");
   background-repeat: no-repeat;
   background-size: cover;
 }
@@ -141,7 +146,7 @@
   padding: 0;
 
   background-color: transparent;
-  background-image: url("../../img/catalog/icon-play.svg");
+  background-image: url("../img/catalog/icon-play.svg");
   background-repeat: no-repeat;
   background-position: center;
   border: none;
@@ -169,14 +174,10 @@
   left: 0;
   right: 0;
 
-  display: none;
   width: 100%;
-  height: -webkit-fill-available;
-  height: -moz-available;
+  height: 100%;
 
-  &--show {
-    display: block;
-  }
+  background-color: #000000;
 }
 
 .catalog__order {
@@ -211,25 +212,29 @@
     flex-shrink: 0;
   }
 
-  .catalog__name {
+  .catalog__video-name {
+    padding-left: 64px;
+    margin-bottom: 33px;
+    margin-top: 0;
+
     font-size: 20px;
 
-    &--video-icon {
-      &::before {
-        top: 0;
-        left: 0;
-      }
+    &::before {
+      top: 0;
+      left: 0;
     }
 
-    &--video-mob {
+    &--mob {
       display: none;
     }
 
-    &--video-notmob {
+    &--notmob {
       display: block;
-      padding-left: 64px;
-      margin-bottom: 33px;
     }
+  }
+
+  .catalog__name {
+    font-size: 20px;
   }
 
   .catalog__desc {
@@ -259,7 +264,7 @@
   }
 
   .catalog__video {
-    background-image: url("../../img/catalog/video-cover-tablet.jpg");
+    background-image: url("../img/catalog/video-cover-tablet.jpg");
     padding-bottom: 68%;
   }
 
@@ -302,11 +307,9 @@
     flex-grow: 1;
   }
 
-  .catalog__name {
-    &--video-notmob {
-      padding-left: 0;
-      padding-top: 49px;
-    }
+  .catalog__video-name {
+    padding-left: 0;
+    padding-top: 49px;
   }
 
   .catalog__desc {
@@ -325,7 +328,7 @@
     padding-bottom: 43%;
     flex-shrink: 0;
 
-    background-image: url("../../img/catalog/video-cover-desktop.jpg");
+    background-image: url("../img/catalog/video-cover-desktop.jpg");
   }
 
   .catalog__video-desc-wrapper {
