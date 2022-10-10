@@ -180,6 +180,7 @@
   width: 25px;
   height: 24px;
 
+  fill: #000000;
   opacity: 0.2;
 }
 
@@ -192,6 +193,7 @@
   height: 21px;
 
   opacity: 0.2;
+  fill: #000000;
 }
 
 .form__text-input {
@@ -214,10 +216,7 @@
     &:hover ~ .form__tel-mark,
     &:active ~ .form__tel-mark {
       opacity: 1;
-
-      path {
-        fill: $light-turquoise;
-      }
+      fill: $light-turquoise;
     }
   }
 
@@ -228,10 +227,7 @@
     &:hover ~ .form__email-mark,
     &:active ~ .form__email-marks {
       opacity: 1;
-
-      path {
-        fill: $light-turquoise;
-      }
+      fill: $light-turquoise;
     }
   }
 

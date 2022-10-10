@@ -22,9 +22,8 @@
 .main-menu__item-icon {
   position: absolute;
 
-  path {
-    opacity: 0.2;
-  }
+  fill: #000000;
+  opacity: 0.2;
 
   &--search {
     top: 31px;
@@ -46,8 +45,8 @@
     opacity: 0.6;
   }
 
-  &:focus path ,
-  &:hover path {
+  &:focus .main-menu__item-icon ,
+  &:hover .main-menu__item-icon {
     fill: $light-turquoise;
     opacity: 1;
   }

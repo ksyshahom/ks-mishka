@@ -5,12 +5,12 @@
 .page-footer__logo {
   display: none;
 
-  &--clickable:focus path,
-  &--clickable:hover path {
+  &--clickable:focus .page-footer__logo-image,
+  &--clickable:hover .page-footer__logo-image {
     fill: #46c1ae;
   }
 
-  &--clickable:active path {
+  &--clickable:active .page-footer__logo-image {
     fill: #46c1ae;
     opacity: 0.3;
   }
@@ -37,13 +37,17 @@
 }
 
 .page-footer__social-icon {
+  fill: #231F20;
+}
 
-  &:focus path,
-  &:hover path {
+.page-footer__social-link {
+
+  &:focus .page-footer__social-icon,
+  &:hover .page-footer__social-icon {
     fill: #46c1ae;
   }
 
-  &:active path {
+  &:active .page-footer__social-icon {
     fill: #46c1ae;
     opacity: 0.3;
   }

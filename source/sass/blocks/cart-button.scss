@@ -1,13 +1,18 @@
+.cart-button__icon {
+  opacity: 0.2;
+  fill: #000000;
+}
+
 .cart-button {
   padding: 0;
 
-  &:focus path,
-  &:hover path {
+  &:focus .cart-button__icon,
+  &:hover .cart-button__icon {
     fill: $light-turquoise;
     opacity: 1;
   }
 
-  &:active path {
+  &:active .cart-button__icon {
     fill: $light-turquoise;
     opacity: 0.3;
   }
