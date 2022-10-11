@@ -3,7 +3,7 @@
   left: 50%;
 
   width: $mobile-width;
-  margin-left: -1 * ($mobile-width / 2);
+  margin-left: -1 * math.div($mobile-width, 2);
   padding: 30px 30px 46px;
 }
 
@@ -101,7 +101,7 @@
 @media (min-width: $tablet-width) {
   .add-to-cart {
     width: 566px;
-    margin-left: -1 * (566px / 2);
+    margin-left: -1 * math.div(566px, 2);
 
     padding-top: 32px;
   }

@@ -2,16 +2,42 @@
   background-color: #f9f9f9;
 
   &--index{
-    background-image: url("../img/index/hero-mobile.jpg");
     background-repeat: no-repeat;
     background-position: center top;
     background-size: 320px auto;
   }
 }
 
-@media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
-  .top-banner--index {
-    background-image: url("../img/index/hero-mobile@2x.jpg");
+.no-webp .top-banner,
+.no-js .top-banner {
+  &--index {
+    background-image: url("../img/index/hero-mobile.jpg");
+    background-image:
+      -webkit-image-set(
+          url("../img/index/hero-mobile.jpg") 1x,
+          url("../img/index/hero-mobile@2x.jpg") 2x
+      );
+    background-image:
+      image-set(
+          url("../img/index/hero-mobile.jpg") 1x,
+          url("../img/index/hero-mobile@2x.jpg") 2x
+      );
+  }
+}
+
+.webp .top-banner {
+  &--index {
+    background-image: url("../img/index/hero-mobile.webp");
+    background-image:
+      -webkit-image-set(
+          url("../img/index/hero-mobile.webp") 1x,
+          url("../img/index/hero-mobile@2x.webp") 2x
+      );
+    background-image:
+      image-set(
+          url("../img/index/hero-mobile.webp") 1x,
+          url("../img/index/hero-mobile@2x.webp") 2x
+      );
   }
 }
 
@@ -35,14 +61,40 @@
     position: relative;
 
     &--index {
-      background-image: url("../img/index/hero-tablet.jpg");
       background-size: 768px auto;
     }
   }
 
-  @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
-    .top-banner--index {
-      background-image: url("../img/index/hero-tablet@2x.jpg");
+  .no-webp .top-banner,
+  .no-js .top-banner {
+    &--index {
+      background-image: url("../img/index/hero-tablet.jpg");
+      background-image:
+        -webkit-image-set(
+            url("../img/index/hero-tablet.jpg") 1x,
+            url("../img/index/hero-tablet@2x.jpg") 2x
+        );
+      background-image:
+        image-set(
+            url("../img/index/hero-tablet.jpg") 1x,
+            url("../img/index/hero-tablet@2x.jpg") 2x
+        );
+    }
+  }
+
+  .webp .top-banner {
+    &--index {
+      background-image: url("../img/index/hero-tablet.webp");
+      background-image:
+        -webkit-image-set(
+            url("../img/index/hero-tablet.webp") 1x,
+            url("../img/index/hero-tablet@2x.webp") 2x
+        );
+      background-image:
+        image-set(
+            url("../img/index/hero-tablet.webp") 1x,
+            url("../img/index/hero-tablet@2x.webp") 2x
+        );
     }
   }
 
@@ -76,8 +128,40 @@
 @media (min-width: $desktop-width) {
   .top-banner {
     &--index {
-      background-image: url("../img/index/hero-desktop.jpg");
       background-size: 1150px auto;
+    }
+  }
+
+  .no-webp .top-banner,
+  .no-js .top-banner {
+    &--index {
+      background-image: url("../img/index/hero-desktop.jpg");
+      background-image:
+        -webkit-image-set(
+            url("../img/index/hero-desktop.jpg") 1x,
+            url("../img/index/hero-desktop@2x.jpg") 2x
+        );
+      background-image:
+        image-set(
+            url("../img/index/hero-desktop.jpg") 1x,
+            url("../img/index/hero-desktop@2x.jpg") 2x
+        );
+    }
+  }
+
+  .webp .top-banner {
+    &--index {
+      background-image: url("../img/index/hero-desktop.webp");
+      background-image:
+        -webkit-image-set(
+            url("../img/index/hero-desktop.webp") 1x,
+            url("../img/index/hero-desktop@2x.webp") 2x
+        );
+      background-image:
+        image-set(
+            url("../img/index/hero-desktop.webp") 1x,
+            url("../img/index/hero-desktop@2x.webp") 2x
+        );
     }
   }
 

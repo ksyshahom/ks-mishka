@@ -131,9 +131,17 @@
   width: 100%;
   padding-bottom: 58%;
 
-  background-image: url("../img/catalog/video-cover.jpg");
   background-repeat: no-repeat;
   background-size: cover;
+}
+
+.no-webp .catalog__video,
+.no-js .catalog__video {
+  background-image: url("../img/catalog/video-cover.jpg");
+}
+
+.webp .catalog__video {
+  background-image: url("../img/catalog/video-cover.webp");
 }
 
 .catalog__video-btn {
@@ -264,8 +272,16 @@
   }
 
   .catalog__video {
-    background-image: url("../img/catalog/video-cover-tablet.jpg");
     padding-bottom: 68%;
+  }
+
+  .no-webp .catalog__video,
+  .no-js .catalog__video {
+    background-image: url("../img/catalog/video-cover-tablet.jpg");
+  }
+
+  .webp .catalog__video {
+    background-image: url("../img/catalog/video-cover-tablet.webp");
   }
 
   .catalog__order {
@@ -327,8 +343,15 @@
     width: 682px;
     padding-bottom: 43%;
     flex-shrink: 0;
+  }
 
+  .no-webp .catalog__video,
+  .no-js .catalog__video {
     background-image: url("../img/catalog/video-cover-desktop.jpg");
+  }
+
+  .webp .catalog__video {
+    background-image: url("../img/catalog/video-cover-desktop.webp");
   }
 
   .catalog__video-desc-wrapper {

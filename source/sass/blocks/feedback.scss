@@ -101,17 +101,6 @@
     padding-bottom: 97px;
     margin-bottom: 60px;
 
-    background-image: url("../img/index/feedback-bg.jpg");
-    background-image:
-      -webkit-image-set(
-          url("../img/index/feedback-bg.jpg") 1x,
-          url("../img/index/feedback-bg@2x.jpg") 2x,
-      );
-    background-image:
-      image-set(
-          url("../img/index/feedback-bg.jpg") 1x,
-          url("../img/index/feedback-bg@2x.jpg") 2x,
-      );
     background-repeat: no-repeat;
     background-size: 350px auto;
 
@@ -122,10 +111,39 @@
     }
   }
 
+  .no-webp .feedback,
+  .no-js .feedback {
+    background-image: url("../img/index/feedback-bg.jpg");
+    background-image:
+      -webkit-image-set(
+          url("../img/index/feedback-bg.jpg") 1x,
+          url("../img/index/feedback-bg@2x.jpg") 2x
+      );
+    background-image:
+      image-set(
+          url("../img/index/feedback-bg.jpg") 1x,
+          url("../img/index/feedback-bg@2x.jpg") 2x
+      );
+  }
+
+  .webp .feedback {
+    background-image: url("../img/index/feedback-bg.webp");
+    background-image:
+      -webkit-image-set(
+          url("../img/index/feedback-bg.webp") 1x,
+          url("../img/index/feedback-bg@2x.webp") 2x
+      );
+    background-image:
+      image-set(
+          url("../img/index/feedback-bg.webp") 1x,
+          url("../img/index/feedback-bg@2x.webp") 2x
+      );
+  }
+
   .feedback__wrapper {
     display: flex;
     justify-content: space-between;
-    align-items: start;
+    align-items: flex-start;
   }
 
   .feedback__title {
