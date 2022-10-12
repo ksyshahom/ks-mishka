@@ -53,6 +53,13 @@
   }
 }
 
+.page-footer__copyright-icon {
+  width: 27px;
+  height: 35px;
+
+  fill: #63D1BB;
+}
+
 .page-footer__copyright {
   display: flex;
   align-items: center;
@@ -62,8 +69,8 @@
   text-decoration: none;
   color: #000000;
 
-  &:focus path,
-  &:hover path {
+  &:focus .page-footer__copyright-icon,
+  &:hover .page-footer__copyright-icon {
     fill: #46c1ae;
   }
 
@@ -78,11 +85,6 @@
   font-size: 19px;
   line-height: 18px;
   font-weight: 700;
-}
-
-.page-footer__copyright-icon {
-  width: 27px;
-  height: 35px;
 }
 
 @media (min-width: $tablet-width) {

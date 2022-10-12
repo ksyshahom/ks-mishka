@@ -8,42 +8,44 @@ import minify from 'gulp-csso';
 import rename from 'gulp-rename';
 import imagemin, {optipng, mozjpeg, svgo} from 'gulp-imagemin';
 import webp from 'gulp-webp';
+import svgstore from 'gulp-svgstore';
+import htmlmin from 'gulp-htmlmin';
+import jsmin from 'gulp-minify';
+import { deleteAsync as del } from "del";
 
 // Styles
 
 export const styles = () => {
-  return gulp.src('source/sass/style.scss', { sourcemaps: true })
+  return gulp.src('source/sass/style.scss')
     .pipe(plumber())
     .pipe(sass().on('error', sass.logError))
     .pipe(postcss([
       autoprefixer()
     ]))
-    .pipe(gulp.dest('source/css'))
+    .pipe(gulp.dest('build/css'))
     .pipe(minify())
     .pipe(rename("style.min.css"))
-    .pipe(gulp.dest('source/css', { sourcemaps: '.' }))
+    .pipe(gulp.dest('build/css'))
     .pipe(browser.stream());
 }
 
-// Server
+// HTML
 
-const server = (done) => {
-  browser.init({
-    server: {
-      baseDir: 'source'
-    },
-    cors: true,
-    notify: false,
-    ui: false,
-  });
-  done();
+const html = () => {
+  return gulp.src('source/*.html')
+    .pipe(htmlmin({ collapseWhitespace: true }))
+    .pipe(gulp.dest('build'));
 }
 
-// Watcher
+// SVG Sprite
 
-const watcher = () => {
-  gulp.watch('source/sass/**/*.scss', gulp.series(styles));
-  gulp.watch('source/*.html').on('change', browser.reload);
+const svgsprite = () => {
+  return gulp.src("source/img/svg-sprite/*.svg")
+    .pipe(svgstore({
+      inlineSvg: true
+    }))
+    .pipe(rename("sprite.svg"))
+    .pipe(gulp.dest("build/img"));
 }
 
 // Images
@@ -65,14 +67,68 @@ export const images = () => {
     .pipe(gulp.dest("source/img"));
 }
 
-// Webp
-
 export const towebp = () => {
   return gulp.src(["source/img/**/*.{png,jpg}", "!source/img/icon/*.{png,jpg}"])
     .pipe(webp({quality: 90}))
     .pipe(gulp.dest("source/img"));
 }
 
+// Clean
+
+export const clean = () => {
+  return del('build');
+};
+
+// Copy
+
+export const copy = () => {
+  return gulp.src([
+    "source/fonts/**/*.{woff,woff2}",
+    "source/img/**",
+    "source/favicon.ico",
+    "!source/img/svg-sprite/*",
+    "!source/img/svg-sprite"
+  ], {
+    base: "source"
+  })
+    .pipe(gulp.dest("build"));
+}
+
+// Server
+
+const server = (done) => {
+  browser.init({
+    server: {
+      baseDir: 'build'
+    },
+    cors: true,
+    notify: false,
+    ui: false,
+  });
+  done();
+}
+
+// Reload
+
+const reload = (done) => {
+  browser.reload();
+  done();
+}
+
+// Watcher
+const watcher = () => {
+  gulp.watch('source/sass/**/*.scss', gulp.series(styles));
+  gulp.watch('source/*.html').on('change', browser.reload);
+  gulp.watch('source/*.html', gulp.series(html, reload));
+  gulp.watch('source/img/svg-sprite/*').on('change', browser.reload);
+  gulp.watch('source/img/svg-sprite/*', gulp.series(svgsprite, reload));
+}
+
 export default gulp.series(
-  styles, server, watcher
+  clean, copy, styles, html, js, svgsprite, server, watcher
 );
+
+export const build = gulp.series(
+  clean, copy, styles, html, js, svgsprite
+);
+
