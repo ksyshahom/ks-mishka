@@ -145,4 +145,3 @@ export default gulp.series(
 export const build = gulp.series(
   clean, copy, styles, html, js, svgsprite
 );
-

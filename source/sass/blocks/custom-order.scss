@@ -26,10 +26,6 @@
 }
 
 @media (min-width: $desktop-width) {
-  .custom-order {
-
-  }
-
   .custom-order__intro {
     @include desktop-margin;
     margin-top: 108px;

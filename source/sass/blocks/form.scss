@@ -149,7 +149,7 @@
     display: none;
     width: 33px;
     height: 18px;
-    background-image: url(../img/knitting/checkbox-tick.svg);
+    background-image: url("../img/knitting/checkbox-tick.svg");
     background-size: contain;
     background-repeat: no-repeat;
   }
@@ -454,7 +454,6 @@
   }
 
   .form__item {
-
     &--color {
       width: calc((100% / 3) - 30px);
     }

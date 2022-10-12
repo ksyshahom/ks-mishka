@@ -29,8 +29,7 @@
     "build": "gulp build",
     "start": "gulp",
     "images": "gulp images",
-    "webp": "gulp towebp",
-    "js": "gulp js"
+    "webp": "gulp towebp"
   },
   "browserslist": [
     "last 2 versions",
