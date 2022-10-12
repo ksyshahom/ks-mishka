@@ -10,7 +10,7 @@ import imagemin, {optipng, mozjpeg, svgo} from 'gulp-imagemin';
 import webp from 'gulp-webp';
 import svgstore from 'gulp-svgstore';
 import htmlmin from 'gulp-htmlmin';
-import jsmin from 'gulp-minify';
+import terser from 'gulp-terser';
 import { deleteAsync as del } from "del";
 
 // Styles
@@ -35,6 +35,18 @@ const html = () => {
   return gulp.src('source/*.html')
     .pipe(htmlmin({ collapseWhitespace: true }))
     .pipe(gulp.dest('build'));
+}
+
+// JS
+
+export const js = () => {
+  return gulp.src('source/js/*.js')
+    .pipe(terser({
+      'format': {
+        'comments': false,
+      },
+    }))
+    .pipe(gulp.dest('build/js'));
 }
 
 // SVG Sprite
@@ -120,6 +132,8 @@ const watcher = () => {
   gulp.watch('source/sass/**/*.scss', gulp.series(styles));
   gulp.watch('source/*.html').on('change', browser.reload);
   gulp.watch('source/*.html', gulp.series(html, reload));
+  gulp.watch('source/js/*.js').on('change', browser.reload);
+  gulp.watch('source/js/*.js', gulp.series(js, reload));
   gulp.watch('source/img/svg-sprite/*').on('change', browser.reload);
   gulp.watch('source/img/svg-sprite/*', gulp.series(svgsprite, reload));
 }
