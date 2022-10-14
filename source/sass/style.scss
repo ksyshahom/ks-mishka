@@ -1,3 +1,6 @@
+//подключение math для выполнения операции деления в scss
+@use "sass:math";
+
 //шрифты, переменные и scaffolding
 //@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap");
 @import "variables.scss";
