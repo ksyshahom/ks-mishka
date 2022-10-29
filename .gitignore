@@ -9,7 +9,4 @@ Thumbs.db
 .idea
 layouts
 build
-dist
 node_modules
-css
-sprite.svg
