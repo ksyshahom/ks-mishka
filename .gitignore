@@ -2,7 +2,6 @@
 *.log
 *.pdf
 *.psd
-*.css
 npm-debug.*
 Thumbs.db
 .DS_Store
