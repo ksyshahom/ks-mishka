@@ -4,7 +4,7 @@ var playBtn = videoWrapper.querySelector(".catalog__video-btn");
 var video = document.createElement("video");
 video.setAttribute("controls","")
 var videoSource = document.createElement("source");
-videoSource.setAttribute("src","img/catalog/Production.mp4")
+videoSource.setAttribute("src","img/catalog/Production1.mp4")
 videoSource.setAttribute("type","video/mp4")
 var videoText = document.createTextNode("Your browser does not support the video tag.");
 video.appendChild(videoSource);
